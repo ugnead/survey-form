@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title">Daily Life During CoVid-19</h1>
+          <p id="description">Thank you for taking the time to answer</p>
+        </header>
+    
+        <form id="survey-form">
+          <div class="question">
+            <label id="name-label" for="name">Name</label><br>
+              <input 
+                type="text" 
+                id="name" 
+                class="input" 
+                placeholder="Enter your name" 
+                required 
+              />
+          </div>
+          
+          <div class="question">
+            <label id="email-label" for="email">Email</label><br>
+              <input 
+                type="email" 
+                id="email" 
+                class="input" 
+                placeholder="Enter your Email" 
+                required 
+              />
+          </div>
+          
+          <div class="question">
+            <label id="number-label" for="number">Age</label><br>
+              <input 
+                type="number"
+                min="18"
+                max="99"
+                id="number" 
+                class="input" 
+                placeholder="Enter your age" 
+                required 
+              />
+          </div>
+          
+          <div class="question">
+            <label id="country-label" for="country">What's your country?</label><br>
+              <input 
+                type="text" 
+                id="country" 
+                class="input" 
+                placeholder="Country name" 
+                required 
+              />
+          </div>
+          
+          <div class="question">
+            <label id="news-label" for="dropdown">How often you check news about Covid-19?</label><br>
+            <select id="dropdown" class="input" required>
+              <option disabled selected value>Select one answer</option>
+              <option value="constantly">I constantly check news</option>
+              <option value="once">Once a day</option>
+              <option value="onceAwhile">Once in a while</option>
+              <option value="barely">I am barely interested in it</option>
+            </select>
+          </div>
+          
+          <div class="question">
+            <label id="sick-label" for="sick">Do you know anyone whose had been sick or died from Covid-19?</label><br>
+            <select id="sick" class="input" required>
+              <option disabled selected value>Select one answer</option>
+              <option value="yes">Yes, one or more members of my family</option>
+              <option value="iam">I've been or I am sick myself</option>
+              <option value="environment">Someone from my environment</option>
+              <option value="noOne">I know no one</option>
+            </select>
+          </div>
+          
+          <div class="question">
+            <label>How would you describe your emotional state during quarantine?</label><br>
+            <span class="clue">(1 - realy bad, 10 - great)</span><br>
+               <input
+                  name="radio"
+                  value="1"
+                  type="radio"
+                  class="input-radio"
+                  checked
+               />1<br>
+               <input
+                  name="radio"
+                  value="2"
+                  type="radio"
+                  class="input-radio"
+               />2<br>  
+               <input
+                  name="radio"
+                  value="3"
+                  type="radio"
+                  class="input-radio"
+               />3<br>  
+               <input
+                  name="radio"
+                  value="4"
+                  type="radio"
+                  class="input-radio"
+               />4<br>  
+               <input
+                  name="radio"
+                  value="5"
+                  type="radio"
+                  class="input-radio"
+               />5<br>  
+               <input
+                  name="radio"
+                  value="6"
+                  type="radio"
+                  class="input-radio"
+               />6<br>  
+               <input
+                  name="radio"
+                  value="7"
+                  type="radio"
+                  class="input-radio"
+               />7<br>  
+               <input
+                  name="radio"
+                  value="8"
+                  type="radio"
+                  class="input-radio"
+               />8<br>  
+               <input
+                  name="radio"
+                  value="9"
+                  type="radio"
+                  class="input-radio"
+               />9<br>  
+               <input
+                  name="radio"
+                  value="10"
+                  type="radio"
+                  class="input-radio"
+               />10<br>  
+          </div>
+          
+          <div class="question">
+            <label id="family-label" for="family">Amount of people in your household during quarantine?</label><br>
+            <select id="family" class="input" required>
+              <option disabled selected value>Select the amount</option>
+              <option value="me">Only me</option>
+              <option value="2">2</option>
+              <option value="2_4">2-4</option>
+              <option value="4_6">4-6</option>
+              <option value="6">6+</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>Do you excercise daily?</label><br>
+               <input
+                  name="excercise"
+                  value="yes"
+                  type="radio"
+                  class="input-radio"
+                  checked
+               />Yes<br>
+               <input
+                  name="excercise"
+                  value="no"
+                  type="radio"
+                  class="input-radio"
+               />No<br>
+               <input
+                  name="excercise"
+                  value="sometimes"
+                  type="radio"
+                  class="input-radio"
+               />Sometimes<br>
+               <input
+                  name="excercise"
+                  value="not"
+                  type="radio"
+                  class="input-radio"
+               />Not during quarantine<br>
+          </div>
+          
+          <div class="question">
+          <label>Have you aquired any new interests during lockdown?</label>
+            <span class="clue">(Check one or two answers)</span><br>
+            <input 
+              name="checkbox"
+              value="yes"
+              type="checkbox"
+              class="input-checkbox"
+            />Yes<br>
+            <input
+              name="checkbox"
+              value="bored"
+              type="checkbox"
+              class="input-checkbox"
+            />Yes, but got bored of it<br>
+            <input
+              name="checkbox"
+              value="no"
+              type="checkbox"
+              class="input-checkbox"
+            />No<br>
+            <input
+              name="checkbox"
+              value="noTime"
+              type="checkbox"
+              class="input-checkbox"
+            />No, I don't have time<br>
+            <input
+              name="checkbox"
+              value="planning"
+              type="checkbox"
+              class="input-checkbox"
+            />I am planning to do so<br>
+            <input
+              name="checkbox"
+              value="other"
+              type="checkbox"
+              class="input-checkbox"
+            />Other<br>
+          </div>
+          
+          <div class="question">
+            <label>If you have any sugestions, leave it here:</label><br>
+              <textarea
+                id="comment"
+                class="input"
+                name="comment"
+                placeholder="Enter your sugestion..."
+              ></textarea>
+          </div>
+          
+          <div class="question">
+            <button 
+              type="submit" 
+              id="submit" 
+              class="submit-button">
+              Submit
+            </button>
+    </div>
+</body>
+</html>
